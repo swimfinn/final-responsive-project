@@ -98,7 +98,7 @@ footer .social-links a {
 footer .social-links a:hover {
   color: orange;
   background-color: white;
-  transition: all 150ms ease;
+  transition: all 100ms ease-in-out;
 }
 
 .sugar-skull {
