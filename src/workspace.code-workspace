@@ -1,0 +1,16 @@
+{
+  "folders": [
+	{
+		"path": "../../final-responsive-project"
+	},
+	{
+		"path": "../documents"
+	},
+	{
+		"path": "."
+	}
+],
+  "settings": {
+    "liveServer.settings.multiRootWorkspaceName": "final-responsive-project"
+  }
+}

@@ -1,0 +1,141 @@
+body {
+  background-image: url("background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  cursor: url(".../src/butterfly-cursor.png"), default;
+  cursor: url("../src/butterfly-cursor.png"), auto;
+}
+
+input[list="datalist"],
+input[type="button"],
+input[type="checkbox"],
+input[type="radio"],
+input[type="color"],
+input[type="range"],
+input[type="reset"],
+input[type="file"],
+input[type="submit"],
+label:not([for=""]),
+a,
+iframe,
+button,
+select,
+keygen {
+  cursor: url(".../src/butterfly-cursor.png"), pointer;
+}
+[contenteditable="true"] {
+  cursor: url(".../src/butterfly-cursor.png"), text;
+}
+
+html,
+body,
+div,
+img,
+iframe,
+button,
+a,
+p,
+h1 a,
+h2 a {
+  cursor: url("../src/butterfly-cursor.png"), auto !important;
+}
+
+body *:hover {
+  cursor: url("../src/butterfly-cursor.png"), auto;
+}
+body:active *:hover {
+  cursor: url("../src/butterfly-cursor.png"), auto;
+}
+
+.cursor {
+  width: 30px;
+  height: 30px;
+  position: absolute;
+  cursor: url("../src/butterfly-cursor.png"), auto;
+}
+
+h1,
+h2,
+h3 {
+  font-family: "Caveat", cursive;
+}
+
+p {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+h1.header {
+  color: transparent;
+  margin-top: 350px;
+  text-align: center;
+  display: block;
+  position: relative;
+  top: -30px;
+  font-size: 150px;
+}
+
+.sugar-skull {
+  max-width: 20px;
+}
+
+.title {
+  color: white;
+  font-size: 32px;
+  text-align: center;
+}
+
+.small-screen {
+  margin-top: -990px;
+}
+
+.forFun {
+  margin-bottom: 25px;
+  padding: 15px;
+  border-radius: 15px;
+  background-image: linear-gradient(
+    45deg,
+    #00c0ff 0%,
+    #ffcf00 49%,
+    #fc4f4f 100%
+  );
+  border-style: solid;
+  color: white;
+  border: 10px solid white;
+  padding: 15px;
+  font-size: 25px;
+  font-weight: 800;
+  text-transform: uppercase;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+#buttons {
+  margin-top: -80px;
+}
+
+button {
+  background-color: rgb(233, 102, 2, 0);
+  border: 1px rgb(233, 102, 2, 0);
+}
+
+.forFun:hover {
+  transition: all 250ms ease-in-out;
+  color: #00c0ff;
+  border-color: #00c0ff;
+}
+
+button:hover img {
+  transition: all 250ms ease-in-out;
+  animation: rotate-btn 3s linear 3;
+  -webkit-animation: rotate-btn 3s linear 3;
+}
+
+@keyframes rotate-btn {
+  0% {
+    transform: rotate(0) scale(1.25);
+  }
+  100% {
+    transform: rotate(360deg) scale(1.25);
+  }
+}

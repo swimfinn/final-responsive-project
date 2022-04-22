@@ -1,0 +1,902 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>What is DOTD?</title>
+    <link href="src/final-project.css" rel="stylesheet" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Caveat:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <style>
+
+
+
+      .dotd-bg, .dotd-info {
+        background: white;
+
+      }
+        .dotd-bg {
+        background-size: cover;
+      }
+
+      .dotd-title, .food-names, .dotd-sub {
+        text-align: center;
+        color: rgba(3, 53, 145);
+        font-family: "Caveat", cursive;
+      }
+        .dotd-title {
+        font-size: 50px;
+      }
+
+      .food-names {
+        font-size:30px;
+      }
+
+      .dotd-sub {
+        font-size: 35px;
+      }
+
+      #info {
+        justify-content: center;
+      }
+
+      .info-mage {
+        border-radius: 15%;
+      }
+
+      .dotd-info {
+        color: black;
+        font-weight: normal;
+        padding: 20px;
+        border-radius: 15px;
+        margin-top: 5px;
+        font-size: 24px;
+        text-align: left;
+      }
+
+      #dotd-costume {
+        border: 10px solid white;
+        border-radius: 30px;
+        max-width: 70%;
+      }
+
+      #origins, #info-image {
+          text-align: center;
+      }
+
+      a:hover {
+          color: orange;
+      }
+
+      @media (max-width: 1024px) {
+          .link-list {
+              display: none !important;
+          }    
+
+          button:hover {
+              background-color: purple;
+          }
+
+          .link-button a {
+              color: white;
+              text-decoration: none;
+              padding: 8px;
+              box-shadow: 5px;
+              font-size: 12px;
+              font-weight: bold;
+          }
+
+          .link-button {
+              text-align: center;
+              margin-left: -20px;
+          }
+
+          .what, .who, .when, .how, .why, .origins, .food {
+              border-radius: 5px;
+          }
+
+          .what {
+              background-color: orange;
+          }
+
+          .who {
+              background-color: magenta;
+          }
+
+          .when {
+              background-color: rgb(0, 110, 255);
+          }
+
+          .how {
+              background-color: rgb(4, 221, 4);
+          }
+
+          .why {
+              background-color: rgb(243, 67, 199);
+          }
+
+          .origins {
+              background-color: rgb(0, 204, 255);
+          }
+
+          .food {
+              background-color: rgb(255, 41, 41);
+          }
+        
+      }
+
+      @media (max-width: 600px) {
+
+        ul, .dotd-info {
+            text-align: center;
+        }
+
+        ul {
+            margin-right: 45px;
+        }
+
+        .dotd-info {
+          font-size: 16px;
+          margin-left: 20px;
+          margin-right: 20px;
+        }
+
+        .recipe-link {
+            font-size: 14px;
+        }
+
+        .dotd-title {
+            font-size: 30px;
+            margin-top: -20px;
+            margin-right: 15px;
+        }
+        .dotd-sub {
+            font-size: 20px;
+        }
+        
+        #food {
+            font-size: 18px;
+}
+
+      }
+    </style>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body class="dotd-bg">
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"
+          ><img class="sugar-skull" src="src/sugar-skull.png" /> Calaca's Best
+          Friend
+        </a>
+        <button
+          class="navbar-toggler me-1"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarNav"
+          aria-controls="navbarNav"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                aria-current="page"
+                href="index.html"
+                title="Home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html" title="About"
+                >About</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="dotd.html" title="What is DOTD?"
+                >What is DOTD?</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="merchandise.html" title="Merchandise"
+                >Merchandise</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="classroom-material.html" title="Classroom Material"
+                >Classroom Material</a
+              >
+            </li>
+            <li class="nav-item">
+              <a
+                class="nav-link active"
+                href="about.html#contact"
+                title="Contact"
+                >Contact</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+
+    
+
+    <h1 class="dotd-title mt-5 mb-5" id="what">What is Day of the Dead?</h1>
+    <div class="container d-flex justify-content-center p1" id="info">
+      <div class="row">
+        <div class="col-md-6" id="info-image">
+          <img class="img-fluid" style="max-width: 60%;" id="dotd-costume" src="src/dotd-costume.jpg" />
+        </div>
+        <div class="col-md-6 d-flex justify-content-center" id="dotd-para2">
+          <p class="dotd-info">
+            Day of the Dead is a Mesoamerican Catholic holiday that honors and
+            remembers the dead and is celebrated mostly in Mexico in places with
+            large indigenous populations (i.e. Oxaca, Michoacan).
+          </p>
+        </div>
+      </div>
+    </div>
+
+     <div class="link-list d-flex justify-content-evenly">
+          <a href="dotd.html#what">What is DOTD?</a>
+          <a href="dotd.html#when">When is DOTD?</a>
+          <a href="dotd.html#why">Why do skeletons smile?</a>
+          <a href="dotd.html#origins">Origins</a>
+          <a href="dotd.html#how">How to celebrate DOTD</a>
+          <a href="dotd.html#who">Who is José Posada?</a>
+          <a href="dotd.html#food">Traditional Recipes</a>
+      </div>
+
+       <div class="link-button d-flex justify-content-evenly d-lg-none">
+          <div class="row ms-4">
+              <div class="col-lg-4 mb-4">
+        <button class="what"><a href="dotd.html#what">What?</a></button>
+          <button class="when"><a href="dotd.html#when">When?</a></button>
+          <button class="why"><a href="dotd.html#why">Why?</a></button>
+          <button class="origins"><a href="dotd.html#origins">Origins</a></button>
+              </div>
+              <div class="col-lg-4">
+          <button class="how"><a href="dotd.html#how">How?</a></button>
+          <button class="who"><a href="dotd.html#who">Who?</a></button>
+         <button class="food"> <a href="dotd.html#food">Food</a></button>
+      </div>
+</div>
+</div>
+
+    <h2 class="dotd-sub mt-5 mb-3" id="when">When is Day of the Dead celebrated?</h2>
+    <div class="container d-flex justify-content-center p1" id="info">
+      <div class="row">
+        <div class="col-md-6" id="info-image">
+          <img class="img-fluid" id="dotd-costume" src="src/autumn.jpg" />
+        </div>
+        <div class="col-md-6" id="dotd-para2">
+          <p class="dotd-info">
+            It is from October 31st – November 2nd. Souls return for a period of 24-hours. 
+            November 1st is for the souls of children and pets who have passed, and November 
+            2nd is for adults. Sometimes when there is a tragic accident or a violent incident 
+            where many people have died, the holiday is extended for several more days. 
+          </p>
+           </div>
+      </div>
+    </div>
+
+      <div class="link-list d-flex justify-content-evenly">
+          <a href="dotd.html#what">What is DOTD?</a>
+          <a href="dotd.html#when">When is DOTD?</a>
+          <a href="dotd.html#why">Why do skeletons smile?</a>
+          <a href="dotd.html#origins">Origins</a>
+          <a href="dotd.html#how">How to celebrate DOTD</a>
+          <a href="dotd.html#who">Who is José Posada?</a>
+          <a href="dotd.html#food">Traditional Recipes</a>
+      </div>
+
+ <div class="link-button d-flex justify-content-evenly d-lg-none">
+          <div class="row ms-4">
+              <div class="col-lg-3 mb-4">
+        <button class="what"><a href="dotd.html#what">What?</a></button>
+          <button class="when"><a href="dotd.html#when">When?</a></button>
+          <button class="why"><a href="dotd.html#why">Why?</a></button>
+          <button class="origins"><a href="dotd.html#origins">Origins</a></button>
+              </div>
+              <div class="col-lg-4">
+          <button class="how"><a href="dotd.html#how">How?</a></button>
+          <button class="who"><a href="dotd.html#who">Who?</a></button>
+         <button class="food"> <a href="dotd.html#food">Food</a></button>
+      </div>
+</div>
+</div>
+
+
+     <h2 class="dotd-sub mt-5 mb-3" id="why">Why are the skeletons smiling?</h2>
+    <div class="container d-flex justify-content-center p1" id="info">
+      <div class="row">
+        <div class="col-md-6" id="info-image">
+          <img class="img-fluid" style="max-width: 60%;" id="dotd-costume" src="src/smiling-skulls.png" />
+        </div>
+        <div class="col-md-6" id="dotd-para2">
+          <p class="dotd-info">
+            Many people are uncomfortable with Day of the Dead because it is at 
+            the same time around Halloween. With Halloween it is a time to be scared. 
+            With Day of the Dead though, it’s a time to celebrate. Mexicans prefer to 
+            the dead are the guests of honor.
+          </p>
+           </div>
+      </div>
+    </div>
+
+      <div class="link-list d-flex justify-content-evenly">
+          <a href="dotd.html#what">What is DOTD?</a>
+          <a href="dotd.html#when">When is DOTD?</a>
+          <a href="dotd.html#why">Why do skeletons smile?</a>
+          <a href="dotd.html#origins">Origins</a>
+          <a href="dotd.html#how">How to celebrate DOTD</a>
+          <a href="dotd.html#who">Who is José Posada?</a>
+          <a href="dotd.html#food">Traditional Recipes</a>
+      </div>
+
+ <div class="link-button d-flex justify-content-evenly d-lg-none">
+          <div class="row ms-4">
+              <div class="col-lg-3 mb-4">
+        <button class="what"><a href="dotd.html#what">What?</a></button>
+          <button class="when"><a href="dotd.html#when">When?</a></button>
+          <button class="why"><a href="dotd.html#why">Why?</a></button>
+          <button class="origins"><a href="dotd.html#origins">Origins</a></button>
+              </div>
+              <div class="col-lg-4">
+          <button class="how"><a href="dotd.html#how">How?</a></button>
+          <button class="who"><a href="dotd.html#who">Who?</a></button>
+         <button class="food"> <a href="dotd.html#food">Food</a></button>
+      </div>
+</div>
+</div>
+
+
+    <h2 class="dotd-sub mt-5 mb-3" id="origins">Origins of Day of the Dead</h2>
+    <div class="container d-flex justify-content-center p1" id="info">
+      <div class="row" id="origins">
+        <div class="col-md-6" id="info-image">
+            <ul style="list-style: none;">
+                <li>
+          <img class="img-fluid" id="dotd-costume" src="src/aztec-dotd.png" />
+          </li>
+          <li>
+             <img class="img-fluid" id="dotd-costume" src="src/church.jpg" /> 
+          </li>
+          <li>
+              <img class="img-fluid" id="dotd-costume" src="src/votive.png" />
+          </li>
+          </ul>
+        </div>
+        <div class="col-md-6" id="dotd-para2">
+          <p class="dotd-info">
+            Many cultures around the world celebrate death in late October/early November
+            as it is between the fall equinox and winter solstice. The Egyptians, the 
+            Romans and the Celts all have holidays that celebrate the dead. 
+          </br>
+        </br>
+            The Aztecs believed that life was a dream, just temporary. They feared life more 
+            than death because of how unsure life is. 
+        </br>
+    </br>
+            In the early fall, Aztecs celebrated death with flowers, food and dancing. To 
+            welcome them, the Aztecs would prepare a feast that consisted of tamales, tortillas, 
+            pumpkins, quail and rabbits. 
+    </br>
+    </br>
+            When the Spaniards came in the 16th century, they converted the Aztecs to Catholicism.
+            The friars explained their religion by incorporating the Aztec’s ancient religion. Gods
+            eventually became saints and major feasts were turned into holidays while retaining 
+            their Mesoamerican traditions. Since Day of the Dead fell closest to the Catholic 
+            holiday, All Saints Day, the two religions' customs and traditions were combined to 
+            create this beautiful holiday. 
+          </p>
+           </div>
+      </div>
+    </div>
+
+      <div class="link-list d-flex justify-content-evenly">
+          <a href="dotd.html#what">What is DOTD?</a>
+          <a href="dotd.html#when">When is DOTD?</a>
+          <a href="dotd.html#why">Why do skeletons smile?</a>
+          <a href="dotd.html#origins">Origins</a>
+          <a href="dotd.html#how">How to celebrate DOTD</a>
+          <a href="dotd.html#who">Who is José Posada?</a>
+          <a href="dotd.html#food">Traditional Recipes</a>
+      </div>
+
+       <div class="link-button d-flex justify-content-evenly d-lg-none">
+          <div class="row ms-4">
+              <div class="col-lg-3 mb-4">
+        <button class="what"><a href="dotd.html#what">What?</a></button>
+          <button class="when"><a href="dotd.html#when">When?</a></button>
+          <button class="why"><a href="dotd.html#why">Why?</a></button>
+          <button class="origins"><a href="dotd.html#origins">Origins</a></button>
+              </div>
+              <div class="col-lg-4">
+          <button class="how"><a href="dotd.html#how">How?</a></button>
+          <button class="who"><a href="dotd.html#who">Who?</a></button>
+         <button class="food"> <a href="dotd.html#food">Food</a></button>
+      </div>
+</div>
+</div>
+
+<h2 class="dotd-sub mt-5 mb-3" id="how">How do people celebrate Day of the Dead?</h2>
+    <div class="container d-flex justify-content-center p1" id="info">
+      <div class="row">
+        <div class="col-md-6" id="info-image">
+          <img class="img-fluid" style="max-width: 45%;" id="dotd-costume" src="src/altar.png" />
+        </div>
+        <div class="col-md-6" id="dotd-para2">
+          <p class="dotd-info">
+            People decorate the graves of loved ones who have passed, make special foods 
+            like mole and bread, build altars as a way to welcome and honor the deceased 
+            and hold special festivals and processions. 
+          </p>
+           </div>
+      </div>
+    </div>
+
+      <div class="link-list d-flex justify-content-evenly">
+          <a href="dotd.html#what">What is DOTD?</a>
+          <a href="dotd.html#when">When is DOTD?</a>
+          <a href="dotd.html#why">Why do skeletons smile?</a>
+          <a href="dotd.html#origins">Origins</a>
+          <a href="dotd.html#how">How to celebrate DOTD</a>
+          <a href="dotd.html#who">Who is José Posada?</a>
+          <a href="dotd.html#food">Traditional Recipes</a>
+      </div>
+
+       <div class="link-button d-flex justify-content-evenly d-lg-none">
+          <div class="row ms-4">
+              <div class="col-lg-3 mb-4">
+        <button class="what"><a href="dotd.html#what">What?</a></button>
+          <button class="when"><a href="dotd.html#when">When?</a></button>
+          <button class="why"><a href="dotd.html#why">Why?</a></button>
+          <button class="origins"><a href="dotd.html#origins">Origins</a></button>
+              </div>
+              <div class="col-lg-4">
+          <button class="how"><a href="dotd.html#how">How?</a></button>
+          <button class="who"><a href="dotd.html#who">Who?</a></button>
+         <button class="food"> <a href="dotd.html#food">Food</a></button>
+      </div>
+</div>
+</div>
+
+    <h2 class="dotd-sub mt-5 mb-3" id="who">Who is José Guadalupe Posada?</h2>
+    <div class="container d-flex justify-content-center p1" id="info">
+      <div class="row">
+        <div class="col-md-6" id="info-image">
+            <ul style="list-style: none;">
+                <li>         
+                <img class="img-fluid" style="max-width: 40%;" id="dotd-costume" src="src/posada.jpg" />
+        <li>         
+                <img class="img-fluid mt-3" style="max-width: 80%;" id="dotd-costume" src="src/catrina.png" />
+        </li>
+    </ul>        
+            </div>
+        <div class="col-md-6" id="dotd-para2">
+          <p class="dotd-info">
+            José Guadalupe Posada (1852 – 1913) was a famous political cartoonist who made fun of 
+            the rich and politicians by drawing them as skeletons. It was to remind people that in 
+            death we’re all equal.
+          </br>
+          </br>
+          He is most famous for his drawing of <em>“Catrina”</em>, a happy skeleton dressed in expensive 
+          attire. <em>Catrín</em> in Spanish means fancy man, and <em>Catrina</em> is the female equivalent, which 
+          was meant to poke fun at the ruling class. However, to many she was not only a symbol of 
+          mocking the wealthy and extravagant lifestyles of the rich, but she later on would become 
+          a symbol of the Day of the Dead holiday and Mexican culture. 
+          </p>
+        </div>
+      </div>
+    </div>
+
+      <div class="link-list d-flex justify-content-evenly">
+          <a href="dotd.html#what">What is DOTD?</a>
+          <a href="dotd.html#when">When is DOTD?</a>
+          <a href="dotd.html#why">Why do skeletons smile?</a>
+          <a href="dotd.html#origins">Origins</a>
+          <a href="dotd.html#how">How to celebrate DOTD</a>
+          <a href="dotd.html#who">Who is José Posada?</a>
+          <a href="dotd.html#food">Traditional Recipes</a>
+      </div>
+
+       <div class="link-button d-flex justify-content-evenly d-lg-none">
+          <div class="row ms-4">
+              <div class="col-lg-3 mb-4">
+        <button class="what"><a href="dotd.html#what">What?</a></button>
+          <button class="when"><a href="dotd.html#when">When?</a></button>
+          <button class="why"><a href="dotd.html#why">Why?</a></button>
+          <button class="origins"><a href="dotd.html#origins">Origins</a></button>
+              </div>
+              <div class="col-lg-4">
+          <button class="how"><a href="dotd.html#how">How?</a></button>
+          <button class="who"><a href="dotd.html#who">Who?</a></button>
+         <button class="food"> <a href="dotd.html#food">Food</a></button>
+      </div>
+</div>
+</div>
+    
+<h2 class="dotd-sub mt-5 mb-3" id="food">What do people eat during Day of the Dead?</h2>
+    <div class="container d-flex justify-content-center p1" id="info">
+      <div class="row">
+        <div class="col-md-6 mt-3" id="info-image">
+          <img class="img-fluid" style="max-width: 55%;" id="dotd-costume" src="src/sugar.jpg" />
+        </div>
+        <div class="col-md-6" id="dotd-para2">
+          <p class="dotd-info">
+            The Mexican dishes that many Americans are familiar with are delicious enough on their 
+            own, but traditional food served during Day of the Dead is a great way to expand your 
+            palette beyond typical comfort foods, such as tacos and burritos. Below is a collection
+            of recipes with links to sites that will take you step by step through how to make these
+            amazing dishes:
+          </p>
+        </div>
+    </div>
+</div>
+
+  <div class="link-list d-flex justify-content-evenly">
+          <a href="dotd.html#tamales">Tamales</a>
+          <a href="dotd.html#mole">Molé</a>
+          <a href="dotd.html#cafe">Café de la Olla?</a>
+          <a href="dotd.html#atole">Atole</a>
+          <a href="dotd.html#pan">Pan de Muerto</a>
+          <a href="dotd.html#pumpkin">Candied Pumpkin</a>
+      </div>
+
+       <div class="link-button d-flex justify-content-evenly d-lg-none">
+          <div class="row ms-4">
+              <div class="col-lg-4 mb-4">
+        <button class="what"><a href="dotd.html#tamales">Tamales</a></button>
+          <button class="when"><a href="dotd.html#mole">Molé</a></button>
+          <button class="why"><a href="dotd.html#cafe">Café</a></button>
+              </div>
+              <div class="col-lg-4">
+          <button class="how"><a href="dotd.html#atole">Atole</a></button>
+          <button class="who"><a href="dotd.html#pan">Pan</a></button>
+         <button class="food"> <a href="dotd.html#pumpkin">Pumpkin</a></button>
+      </div>
+</div>
+</div>
+          
+                    <h3 class="food-names mt-5" id="tamales">1. Tamales</h3>
+                     <div class="container d-flex justify-content-center p1" id="info">
+                         <div class="row">
+                             <div class="col-md-6" style="text-align: center;" id="tamales">
+<img class="img-fluid mt-5" id="dotd-costume" src="src/tamales.jpg" style="max-width: 50%; border-radius: 50%;" />
+                        </div>
+                        <div class=col-md-6>
+                            <p class="dotd-info">
+                                Tried and true, this recipe takes you through step by step on 
+                                how to make delicious pork tamales. This food is often left at 
+                                altars as it is a favorite Mexican comfort food. It should be 
+                                noted thoughthat tamales vary from place to place. Some use corn 
+                                husks or banana leavesto wrap them in. Some are sweet and use 
+                                various fruits and jams while traditionally they are savory and 
+                                can be made with chicken, chiles, cheese, pork, or even grasshoppers.
+                            </br>
+                            </br>
+                            <a class="recipe-link" href="https://www.food.com/recipe/traditional-tamales-pork-15286">
+                                Tamales Recipe
+                            </a>
+                            </p>
+                   </div>
+                </div>
+            </div>
+ </br>
+             <div class="link-list d-flex justify-content-evenly">
+          <a href="dotd.html#tamales">Tamales</a>
+          <a href="dotd.html#mole">Molé</a>
+          <a href="dotd.html#cafe">Café de la Olla?</a>
+          <a href="dotd.html#atole">Atole</a>
+          <a href="dotd.html#pan">Pan de Muerto</a>
+          <a href="dotd.html#pumpkin">Candied Pumpkin</a>
+      </div>
+
+       <div class="link-button d-flex justify-content-evenly d-lg-none">
+          <div class="row ms-4">
+              <div class="col-lg-4 mb-4">
+        <button class="what"><a href="dotd.html#tamales">Tamales</a></button>
+          <button class="when"><a href="dotd.html#mole">Molé</a></button>
+          <button class="why"><a href="dotd.html#cafe">Café</a></button>
+              </div>
+              <div class="col-lg-4">
+          <button class="how"><a href="dotd.html#atole">Atole</a></button>
+          <button class="who"><a href="dotd.html#pan">Pan</a></button>
+         <button class="food"> <a href="dotd.html#pumpkin">Pumpkin</a></button>
+      </div>
+</div>
+</div>
+         
+
+            <h3 class="food-names mt-5" id="mole">2. Molé</h3>
+                     <div class="container d-flex justify-content-center p1" id="mole">
+                         <div class="row">
+                             <div class="col-md-6" style="text-align: center;" id="tamales">
+<img class="img-fluid mt-5" id="dotd-costume" src="src/mole.png" style="max-width: 80%; border-radius: 50%;" />
+<header>
+    (Photo by Alejandro Linares Garcia)
+</header>                        
+</div>
+                        <div class=col-md-6>
+                            <p class="dotd-info">
+                                Molé, which comes from the Nahuatl word <em>mōlli</em> means sauce. 
+                                You might recognizeone famous dip in particular, <em>guacamole</em>, 
+                                which translates to avocado sauce. 
+                            </br></br>
+                                Most popular in Puebla and Oaxaca, 
+                                most molé is a savory chocolate-based sauce that’s mixed with other 
+                                ingredients like onions, chiles, peppers and onions to create a dark 
+                                treat that goes on top of meats and vegetables.
+                            </br>
+                       </br>
+                            <a class="recipe-link" href="http://www.geniuskitchen.com/recipe/mole-mo-lay-sauce-35659">
+                                Molé Recipe
+                            </a>
+                            </p>
+                   </div>
+                </div>
+            </div>
+ </br>
+<div class="link-list d-flex justify-content-evenly">
+          <a href="dotd.html#tamales">Tamales</a>
+          <a href="dotd.html#mole">Molé</a>
+          <a href="dotd.html#cafe">Café de la Olla?</a>
+          <a href="dotd.html#atole">Atole</a>
+          <a href="dotd.html#pan">Pan de Muerto</a>
+          <a href="dotd.html#pumpkin">Candied Pumpkin</a>
+      </div>
+
+       <div class="link-button d-flex justify-content-evenly d-lg-none">
+          <div class="row ms-4">
+              <div class="col-lg-4 mb-4">
+        <button class="what"><a href="dotd.html#tamales">Tamales</a></button>
+          <button class="when"><a href="dotd.html#mole">Molé</a></button>
+          <button class="why"><a href="dotd.html#cafe">Café</a></button>
+              </div>
+              <div class="col-lg-4">
+          <button class="how"><a href="dotd.html#atole">Atole</a></button>
+          <button class="who"><a href="dotd.html#pan">Pan</a></button>
+         <button class="food"> <a href="dotd.html#pumpkin">Pumpkin</a></button>
+      </div>
+</div>
+</div>
+         
+
+
+ <h3 class="food-names mt-5" id="cafe">3. Café de la Olla</h3>
+                     <div class="container d-flex justify-content-center p1" id="info">
+                         <div class="row">
+                             <div class="col-md-6" style="text-align: center;" id="cafe">
+<img class="img-fluid mt-5" id="dotd-costume" src="src/cafe.png" style="max-width: 50%; border-radius: 50%;" />
+<header>
+    <a class="recipe-link" href="https://www.flickr.com/people/62467140@N02">Mover el Bigote</a>
+</header>
+                        </div>
+                        <div class=col-md-6>
+                            <p class="dotd-info">
+                               <em>Café de la Olla</em>, or pot coffee, is a dark, spiced java that tickles the 
+                               senses. It is a mixture of orange peels, star anise, cinnamon, and <em>piloncillo</em> 
+                               (dark, unrefined sugar). It's traditional Mexican coffee that is boiled in an earthy clay pot, 
+                               which gives it its unique flavor. This particular style of coffee is popular in
+                               rural areas where the climates are colder. 
+                            </br>
+                            </br>
+                            <a class="recipe-link" href="https://www.foodnetwork.com/recipes/marcela-valladolid/cafe-mexicano-spiced-cafe-de-olla-coffee-recipe-1949300">
+                                Café de la Olla Recipe
+                            </a>
+                            </p>
+                   </div>
+                </div>
+            </div>
+        </br>
+
+            <div class="link-list d-flex justify-content-evenly">
+          <a href="dotd.html#tamales">Tamales</a>
+          <a href="dotd.html#mole">Molé</a>
+          <a href="dotd.html#cafe">Café de la Olla?</a>
+          <a href="dotd.html#atole">Atole</a>
+          <a href="dotd.html#pan">Pan de Muerto</a>
+          <a href="dotd.html#pumpkin">Candied Pumpkin</a>
+      </div>
+
+       <div class="link-button d-flex justify-content-evenly d-lg-none">
+          <div class="row ms-4">
+              <div class="col-lg-4 mb-4">
+        <button class="what"><a href="dotd.html#tamales">Tamales</a></button>
+          <button class="when"><a href="dotd.html#mole">Molé</a></button>
+          <button class="why"><a href="dotd.html#cafe">Café</a></button>
+              </div>
+              <div class="col-lg-4">
+          <button class="how"><a href="dotd.html#atole">Atole</a></button>
+          <button class="who"><a href="dotd.html#pan">Pan</a></button>
+         <button class="food"> <a href="dotd.html#pumpkin">Pumpkin</a></button>
+      </div>
+</div>
+</div>
+         
+
+
+ <h3 class="food-names mt-5" id="atole">4. Atole</h3>
+                     <div class="container d-flex justify-content-center p1" id="atole">
+                         <div class="row">
+                             <div class="col-md-6" style="text-align: center;" id="atole">
+<img class="img-fluid mt-5" id="dotd-costume" src="src/atole.jpg" style="max-width: 50%; border-radius: 50%;" />
+<header>
+Tom White
+</header>
+                        </div>
+                        <div class=col-md-6 id="food-para">
+                            <p class="dotd-info">
+                                Atole, an ancient drink created by the Aztecs, is a traditional masa and corn-based beverage, is very popular
+                                during Day of the Dead, and goes along great with tamales. It's also made with chiles, spices, 
+                                and piloncillo. The most well-known version of the drink is <em>champurrado</em>, which is 
+                                chocolate-based.
+                            </br>
+                            </br>
+                            <a class="recipe-link" href="http://www.geniuskitchen.com/recipe/champurrado-chocolate-atole-139211">
+                                Chocolate Atole (Champurrado) Recipe
+                            </a>
+                            </p>
+                   </div>
+                </div>
+            </div>
+ </br>
+
+            <div class="link-list d-flex justify-content-evenly">
+          <a href="dotd.html#tamales">Tamales</a>
+          <a href="dotd.html#mole">Molé</a>
+          <a href="dotd.html#cafe">Café de la Olla?</a>
+          <a href="dotd.html#atole">Atole</a>
+          <a href="dotd.html#pan">Pan de Muerto</a>
+          <a href="dotd.html#pumpkin">Candied Pumpkin</a>
+      </div>
+
+       <div class="link-button d-flex justify-content-evenly d-lg-none">
+          <div class="row ms-4">
+              <div class="col-lg-4 mb-4">
+        <button class="what"><a href="dotd.html#tamales">Tamales</a></button>
+          <button class="when"><a href="dotd.html#mole">Molé</a></button>
+          <button class="why"><a href="dotd.html#cafe">Café</a></button>
+              </div>
+              <div class="col-lg-4">
+          <button class="how"><a href="dotd.html#atole">Atole</a></button>
+          <button class="who"><a href="dotd.html#pan">Pan</a></button>
+         <button class="food"> <a href="dotd.html#pumpkin">Pumpkin</a></button>
+      </div>
+</div>
+</div>
+         
+
+<h3 class="food-names mt-5" id="atole">5. Pan de Muerto</h3>
+                     <div class="container d-flex justify-content-center p1" id="pan">
+                         <div class="row">
+                             <div class="col-md-6" style="text-align: center;" id="pan">
+<img class="img-fluid mt-5" id="dotd-costume" src="src/pan.jpg" style="max-width: 80%; border-radius: 50%;" />
+
+                        </div>
+                        <div class=col-md-6>
+                            <p class="dotd-info">
+                                This special pastry is probably one of the most important elements of an altar as it has 
+                                a lot of symbolism. It is referred to as Breadof the Dead. The mildly sweet baked goods 
+                                are baked in a circle to represent the circle of life with knobs on top as a symbol of 
+                                their skull. It's dome shape represents a grave. With the leftover dough, the baker makes 
+                                little crossbones and tears on the sides, which represent the deceased. Then the bread is
+                                lightly dusted with white or pink sugar. This bread is traditionally eaten at the gravesite 
+                                of your loved ones or at the ofrenda. 
+                        </br>
+                        </br>
+                            <a class="recipe-link" href="https://www.allrecipes.com/recipe/7224/pan-de-muertos-mexican-bread-of-the-dead/">
+                                Pan de Muerto Recipe
+                            </a>
+                            </p>
+                   </div>
+                </div>
+            </div>
+ </br>
+
+            <div class="link-list d-flex justify-content-evenly">
+          <a href="dotd.html#tamales">Tamales</a>
+          <a href="dotd.html#mole">Molé</a>
+          <a href="dotd.html#cafe">Café de la Olla?</a>
+          <a href="dotd.html#atole">Atole</a>
+          <a href="dotd.html#pan">Pan de Muerto</a>
+          <a href="dotd.html#pumpkin">Candied Pumpkin</a>
+      </div>
+
+       <div class="link-button d-flex justify-content-evenly d-lg-none">
+          <div class="row ms-4">
+              <div class="col-lg-4 mb-4">
+        <button class="what"><a href="dotd.html#tamales">Tamales</a></button>
+          <button class="when"><a href="dotd.html#mole">Molé</a></button>
+          <button class="why"><a href="dotd.html#cafe">Café</a></button>
+              </div>
+              <div class="col-lg-4">
+          <button class="how"><a href="dotd.html#atole">Atole</a></button>
+          <button class="who"><a href="dotd.html#pan">Pan</a></button>
+         <button class="food"> <a href="dotd.html#pumpkin">Pumpkin</a></button>
+      </div>
+</div>
+</div>
+
+
+<h3 class="food-names mt-5" id="atole">6. Calabaza en Tacha</h3>
+                     <div class="container d-flex justify-content-center p1" id="pumpkin">
+                         <div class="row">
+                             <div class="col-md-6" style="text-align: center;" id="pumpkin">
+<img class="img-fluid mt-5" id="dotd-costume" src="src/pumpkin.jpg" style="max-width: 80%; border-radius: 50%;" />
+<header>
+VivaLaPinateria
+</header>
+                        </div>
+                        <div class=col-md-6>
+                            <p class="dotd-info">
+                                This delicious, sweet treat is comparable to candied yams or sweet potatoes. It is the most
+                                common dish to be found on family altars and is mostly made during Day of the Dead. In Mexico, 
+                                they usually use calabaza de castilla, a type of winter squash from Southern Mexico. Traditionally, 
+                                honey was used to sweeten squash in pre-Hispanic times. Each region has a special way of 
+                                preparing this amazing snack using star anis, sugarcane, fruit, orange zest, and figs.  
+                    </br>
+                        </br>
+                            <a class="recipe-link" href="https://www.goya.com/en/recipes/candied-pumpkin">
+                                Calabaza en Tacha
+                            </a>
+                            </p>
+                   </div>
+                </div>
+            </div>
+ </br>
+
+            
+      <div class="link-list d-flex justify-content-evenly mb-5">
+          <a href="dotd.html#what">What is DOTD?</a>
+          <a href="dotd.html#when">When is DOTD?</a>
+          <a href="dotd.html#why">Why do skeletons smile?</a>
+          <a href="dotd.html#origins">Origins</a>
+          <a href="dotd.html#how">How to celebrate DOTD</a>
+          <a href="dotd.html#who">Who is José Posada?</a>
+          <a href="dotd.html#food">Traditional Recipes</a>
+      </div>
+
+       <div class="link-button d-flex justify-content-evenly d-lg-none mb-5">
+          <div class="row ms-4">
+              <div class="col-lg-3 mb-4">
+        <button class="what"><a href="dotd.html#what">What?</a></button>
+          <button class="when"><a href="dotd.html#when">When?</a></button>
+          <button class="why"><a href="dotd.html#why">Why?</a></button>
+          <button class="origins"><a href="dotd.html#origins">Origins</a></button>
+              </div>
+              <div class="col-lg-4">
+          <button class="how"><a href="dotd.html#how">How?</a></button>
+          <button class="who"><a href="dotd.html#who">Who?</a></button>
+         <button class="food"> <a href="dotd.html#food">Food</a></button>
+      </div>
+</div>
+</div>
+         
+
+
+  </body>
+</html>
