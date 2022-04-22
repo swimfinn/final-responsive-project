@@ -95,6 +95,12 @@ footer .social-links a {
   border-radius: 50%;
 }
 
+footer .social-links a:hover {
+  color: orange;
+  background-color: white;
+  transition: all 150ms ease;
+}
+
 .sugar-skull {
   max-width: 20px;
 }
