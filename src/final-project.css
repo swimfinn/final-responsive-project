@@ -75,6 +75,17 @@ h1.header {
   font-size: 150px;
 }
 
+footer .email-link {
+  text-decoration: none;
+  color: white;
+  font-size: 24px;
+  text-align: center;
+}
+
+footer .email-link {
+  color: orange;
+}
+
 .sugar-skull {
   max-width: 20px;
 }
