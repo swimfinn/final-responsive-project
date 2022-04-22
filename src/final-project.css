@@ -82,7 +82,7 @@ footer .email-link {
   text-align: center;
 }
 
-footer .email-link {
+footer .email-link:hover {
   color: orange;
 }
 
